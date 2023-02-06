@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
     <div
       class="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition"
     >
@@ -24,7 +24,7 @@
         </button>
 
         <router-link
-          :to="`/products/${product.id}`"
+          :to="`/products/${product._id}`"
           class="w-10 h-10 bg-white flex justify-center items-center text-black drop-shadow-xl"
         >
           <i class="fa-solid fa-eye"></i>
@@ -34,14 +34,11 @@
 
     <!-- Category & price -->
     <div>
-      <div class="text-sm capitalize text-gray-500 mb-1">
-        {{ product.category }}
-      </div>
-      <router-link :to="`/products/${product.id}`">
+      <router-link :to="`/products/${product._id}`">
         <h2
           class="font-semibold mb-1 whitespace-nowrap overflow-hidden text-ellipsis"
         >
-          {{ product.title }}
+          {{ product.name }}
         </h2>
       </router-link>
       <div class="font-semibold">$ {{ product.price }}</div>

@@ -4,8 +4,7 @@
       <div class="flex-[2] items-center flex max-[600px]:flex-col">
         <img class="w-[100px] h-[100px]" :src="item.product.image" alt="" />
         <div class="p-5 flex flex-col justify-around">
-          <p><b>Category: </b>{{ item.product.category }}</p>
-          <p><b>Product: </b> {{ item.product.title }}</p>
+          <p><b>Product: </b> {{ item.product.name }}</p>
           <p
             class="overflow-hidden overflow-ellipsis handle-font max-[1024px]:hidden"
           >

@@ -10,9 +10,4 @@ export default {
   show(id) {
     return Api.get(`products/${id}`);
   },
-
-  // All category
-  categories() {
-    return Api.get("products/categories");
-  },
 };

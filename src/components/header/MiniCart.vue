@@ -11,7 +11,7 @@
           <div
             class="text-sm uppercase font-medium max-w-[240px] text-black hover:underline cursor-default"
           >
-            {{ item.product.title }}
+            {{ item.product.name }}
           </div>
 
           <div
@@ -112,6 +112,7 @@ export default {
 
     removeItems(product) {
       this.$store.dispatch("removeToCart", product);
+
       this.alertDialog();
     },
   },

@@ -9,14 +9,6 @@ export default {
     commit("getAllProducts", data);
   },
 
-  // All Category
-  async getAllCategories({ commit }) {
-    const res = await Products.categories();
-    const data = await res.data;
-
-    commit("getAllCategories", data);
-  },
-
   // Single Product
   async getSingleProduct({ commit }, id) {
     const res = await Products.show(id);
@@ -24,8 +16,6 @@ export default {
 
     commit("getSingleProduct", data);
   },
-
-  // cart
 
   // add to cart
   addProductToCart({ commit }, { product, quantity }) {

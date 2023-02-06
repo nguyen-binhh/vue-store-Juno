@@ -15,7 +15,7 @@
       <div
         class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl-grid-cols-5 gap-[30px] max-w-sm mx-auto md:max-w-none md:mx-0"
       >
-        <div v-for="item in limitProducts" :key="item.id">
+        <div v-for="item in limitProducts" :key="item._id">
           <div
             class="border border-[#e4e4e4] h-[300px] mb-4 relative overflow-hidden group transition"
           >
@@ -31,16 +31,8 @@
             <div
               class="absolute top-0 right-0 group-hover:right-5 p-2 flex flex-col items-center justify-center gap-y-2 opacity-0 group-hover:opacity-100 transition-all duration-300"
             >
-              <button>
-                <div
-                  class="flex justify-center items-center text-white w-10 h-10 bg-red-500"
-                  @click="addToCart(`${item.id}` - 1)"
-                >
-                  <i class="fa-solid fa-plus text-3xl"></i>
-                </div>
-              </button>
               <router-link
-                :to="`/products/${item.id}`"
+                :to="`/products/${item._id}`"
                 class="w-10 h-10 bg-white flex justify-center items-center text-black drop-shadow-xl"
               >
                 <i class="fa-solid fa-eye"></i>
@@ -50,14 +42,11 @@
 
           <!-- Category & price -->
           <div>
-            <div class="text-sm capitalize text-gray-500 mb-1">
-              {{ item.category }}
-            </div>
-            <router-link :to="`/products/${item.id}`">
+            <router-link :to="`/products/${item._id}`">
               <h2
                 class="font-semibold mb-1 whitespace-nowrap overflow-hidden text-ellipsis"
               >
-                {{ item.title }}
+                {{ item.name }}
               </h2>
             </router-link>
             <div class="font-semibold">$ {{ item.price }}</div>

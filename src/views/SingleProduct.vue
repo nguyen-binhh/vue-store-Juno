@@ -17,11 +17,8 @@
             />
           </div>
           <div class="w-1/2 mt-[30px]">
-            <h4 class="uppercase text-black font-bold text-lg">
-              {{ this.singleProduct.category }}
-            </h4>
             <h1 class="mt-2 font-normal text-3xl">
-              {{ this.singleProduct.title }}
+              {{ this.singleProduct.name }}
             </h1>
             <p class="font-semibold mt-3">
               Rating

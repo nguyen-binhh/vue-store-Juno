@@ -26,7 +26,7 @@
               <input
                 type="text"
                 class="mt-6 w-full h-10 px-5 text-base border border-b-slate-100 outline-none"
-                placeholder="Email"
+                placeholder="nguyenphubinh2207@gmail.com"
                 v-model="user.email"
               />
             </div>
@@ -34,7 +34,7 @@
               <input
                 type="password"
                 class="mt-6 w-full h-10 px-5 text-base border border-b-slate-100 outline-none"
-                placeholder="password"
+                placeholder="123456789"
                 v-model="user.password"
               />
             </div>

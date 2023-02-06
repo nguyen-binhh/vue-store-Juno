@@ -3,8 +3,8 @@ export default {
     return state.products;
   },
 
-  category(state) {
-    return state.categories;
+  getAllCategoryProducts(state) {
+    return state.getAllCategoryProducts;
   },
 
   limitProducts(state) {
@@ -22,6 +22,7 @@ export default {
   },
   cartTotalPrice(state) {
     let total = 0;
+    console.log(state.cart.product);
 
     state.cart.forEach((item) => (total += item.product.price * item.quantity));
 

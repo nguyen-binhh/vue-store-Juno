@@ -5,7 +5,11 @@
 
       <div class="logo">
         <router-link class="logo-link" to="/">
-          <img class="logo-img" src="@/assets/images/logoBrand.png" alt="" />
+          <img
+            class="logo-img"
+            src="https://file.hstatic.net/1000003969/file/logo-svg.svg"
+            alt=""
+          />
         </router-link>
       </div>
 
