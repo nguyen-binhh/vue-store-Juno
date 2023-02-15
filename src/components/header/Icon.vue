@@ -79,7 +79,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import { useUser } from "@/composables/useUsers";
+import { useUser } from "../../composables/useUsers";
 import BoxItem from "./BoxItem.vue";
 
 import MiniCart from "./MiniCart.vue";

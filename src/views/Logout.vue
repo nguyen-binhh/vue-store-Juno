@@ -4,7 +4,7 @@
 
 <script>
 import { useRouter } from "vue-router";
-import { useLogout } from "@/composables/useLogOut";
+import { useLogout } from "../composables/useLogout";
 export default {
   setup() {
     const router = useRouter();

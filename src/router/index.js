@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import { projectAuth } from "@/configs/firebase";
+import { projectAuth } from "../configs/firebase";
 import Home from "@/views/HomeView.vue";
 
 const requireAuth = (to, from, next) => {

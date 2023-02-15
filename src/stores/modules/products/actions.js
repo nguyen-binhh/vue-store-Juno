@@ -1,4 +1,4 @@
-import Products from "@/services/Products";
+import Products from "../../../services/Products";
 
 export default {
   // All products
