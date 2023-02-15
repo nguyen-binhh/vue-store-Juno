@@ -67,7 +67,7 @@
 
 <script>
 import { reactive } from "vue";
-import { useSignin } from "@/composables/useSignIn";
+import { useSignin } from "../composables/useSignin";
 import { useRouter } from "vue-router";
 export default {
   setup() {
